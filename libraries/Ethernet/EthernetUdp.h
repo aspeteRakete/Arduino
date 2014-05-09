@@ -42,7 +42,7 @@
 #define UDP_TX_PACKET_MAX_SIZE 24
 
 class EthernetUDP : public UDP {
-private:
+protected:
   uint8_t _sock;  // socket ID for Wiz5100
   uint16_t _port; // local port to listen on
   IPAddress _remoteIP; // remote IP address for the incoming packet whilst it's being processed
