@@ -220,8 +220,8 @@ void EthernetUDP::flush()
 /* Start EthernetUDP socket, listening at local port PORT */
 uint8_t EthernetUDP::beginMulti(IPAddress ip, uint16_t port) {
     Serial.println("beginMulti()");
-    if (_sock != MAX_SOCK_NUM)
-        return 0;
+    //if (_sock != MAX_SOCK_NUM)
+    //    return 0;
     
     for (int i = 0; i < MAX_SOCK_NUM; i++) {
         uint8_t s = W5100.readSnSR(i);
